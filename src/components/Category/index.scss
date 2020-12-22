@@ -1,0 +1,44 @@
+.category {
+	padding-left: 100px;
+	width: 100%;
+	color: rgba(255, 255, 255, 0.548);
+	&-title {
+		cursor: pointer;
+	}
+
+	&-title:hover {
+		color: aqua;
+	}
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		transition: 0.3s;
+		height: 0;
+		opacity: 0;
+
+		li {
+			list-style: none;
+			padding: 5px 10px;
+
+			.item-link {
+				text-decoration: none;
+				color: #b2bec3;
+				transition: 0.5 linear;
+			}
+
+			.item-link:hover {
+				color: white;
+				margin-left: 5px;
+			}
+		}
+	}
+	.entered {
+		height: 100%;
+		opacity: 1;
+	}
+
+	&-item {
+		width: 200px;
+	}
+}

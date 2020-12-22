@@ -1,0 +1,9 @@
+@import "../../main.scss";
+
+.film {
+    background-color: $base-color;
+    padding: 50px;
+    .text-heading {
+        color: white
+    }
+}

@@ -1,0 +1,14 @@
+@import "../../main.scss";
+
+.change_password {
+	padding-top: 100px;
+	background-color: $background-color;
+	height: 100%;
+	.change_password-wrapper {
+		padding-top: 30px;
+		border: 1px solid #525357;
+		label {
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@import "../../main.scss";
+
+.film-detail {
+	padding-top: 60px;
+	background-color: $background-color;
+
+	.container {
+		> div {
+			width: 100%;
+		}
+		.player {
+			min-height: 663px;
+		}
+
+		.info {
+			color: white;
+			padding-top: 30px;
+			.info-img--wrapper {
+				width: 100%;
+				height: 234px;
+			}
+
+			.info-img {
+				padding-top: 150%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			&-detail {
+				> div {
+					div:first-child {
+						font-weight: bold;
+						width: 30%;
+						margin-right: 5px;
+					}
+
+					div:last-child {
+						width: 70%;
+					}
+				}
+			}
+
+			.rating {
+				cursor: pointer;
+			}
+		}
+
+		.comments {
+			.comment-wrapper {
+				background-color: #0c0c0c;
+				border-radius: 10px;
+				margin-bottom: 20px;
+				width: 70%;
+				padding: 20px;
+				.comment-item {
+					list-style: none;
+
+					textarea {
+						background-color: #2d3436;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

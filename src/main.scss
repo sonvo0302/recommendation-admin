@@ -1,0 +1,50 @@
+$base-color: black;
+$white-color: white;
+$background-color: #2d3436;
+
+@mixin text-heading($color) {
+	color: $color;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+@mixin text-sub-heading($color) {
+	color: $color;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+@mixin text-normal($color) {
+	color: $color;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+@mixin text-light($color) {
+	color: $color;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 150%;
+}
+
+.text-heading {
+	$color: white;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.text-sub-heading {
+	@include text-sub-heading($white-color);
+}
+
+.text-normal {
+	@include text-normal($white-color);
+}
+
+.text-light {
+	@include text-light($white-color);
+}

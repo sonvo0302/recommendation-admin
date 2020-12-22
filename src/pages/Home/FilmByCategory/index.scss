@@ -1,0 +1,28 @@
+@import "../../../main.scss";
+.film-category {
+	.skeleton-item {
+		width: 20%;
+		padding: 0 15px;
+	}
+	.slick-list {
+		padding-left: 5px;
+		.slick-track {
+			margin-left: 0;
+		}
+	}
+	.slick-prev.slick-disabled:before,
+	.slick-next.slick-disabled:before {
+		opacity: 0;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		font-size: 36px;
+	}
+
+	.category-heading {
+		@include text-heading($white-color);
+
+		cursor: pointer;
+	}
+}

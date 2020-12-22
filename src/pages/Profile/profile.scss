@@ -1,0 +1,14 @@
+@import "../../main.scss";
+
+.profile {
+	padding-top: 100px;
+	background-color: $background-color;
+	height: 100%;
+	.profile-wrapper {
+		padding-top: 30px;
+		border: 1px solid #525357;
+		label {
+			color: white;
+		}
+	}
+}

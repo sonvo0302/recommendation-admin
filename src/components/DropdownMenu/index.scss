@@ -1,0 +1,29 @@
+@import "../../main.scss";
+
+.dropdown {
+    position: absolute !important;
+    top: 68px;
+    right: 0px;
+    width: 300px;
+    transform: translateX(-15%);
+    border: 1px solid #525357;
+    border-radius: 10px;
+
+    padding: 1rem;
+    z-index: 3000;
+    overflow: hidden;
+    background-color: $base-color;
+
+    .dropdowm-item {
+        padding: 1rem;
+        color: white;
+
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .dropdowm-item:hover {
+        background-color: #525357;
+        font-weight: 600;
+    }
+}

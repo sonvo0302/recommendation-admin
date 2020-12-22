@@ -1,0 +1,35 @@
+.poster {
+    padding: 30px 100px;
+    .poster-item {
+        position: relative;
+        .poster-img--wrapper {
+            width: 100%;
+            .poster-img {
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding-top: 120%;
+            }
+        }
+
+        .poster-background {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            >div {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                opacity: 0.2;
+                padding-top: 50%;
+            }
+        }
+        .poster-content {
+            >div>p {
+                color: white;
+            }
+        }
+    }
+}
